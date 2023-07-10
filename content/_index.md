@@ -1,19 +1,20 @@
 ---
 ---
 
-I'm **Chris Turner**, a Software Engineer.
+i'm **bryson lockett**, a product manager by day and a tinkerer by night.
 
-I love all things computer science and maths.
+i love (almost) all things tech.
 
-Have a look at some of my working [projects].
+have a look at some of my working [projects].
 
-For more check out my academic & professional [resume].
+for more check out my [resume] and [blog].
 
-Contact me at [@username] or by [email].
+contact me via [email].
 
 
 
 [projects]: /projects
-[resume]: https://demo.nurlan.co/hugo-vitae/
+[resume]: /resume
+[blog]: /blog
 [@username]: https://twitter.com/username
-[email]: mailto:email@example.com
+[email]: mailto:bryson@lockett.us
