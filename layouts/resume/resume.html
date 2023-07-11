@@ -8,15 +8,18 @@
         {{ range .Params.positions }}
         <div class="job">
             <p class="years">{{ .years }}</p>
-            <h2 class="position">{{ .position }}</h2>
+            <h5 class="position">{{ .position }}</h5>
             <p class="company">{{ .company }}</p>
         </div>
         {{ end }}
     </div>
     <div class="blurb">
-        <p>{{ .Params.blurb }}</p>
-        <a href="{{ .Params.linkedin }}">LinkedIn</a>
-        <a href="{{ .Params.resume }}">Download Resume</a>
+        <h5>experience</h5>
+        <p>{{ .Params.blurb }}</p>    
+        {{ with .Site.Params.Social.LinkedIn }}
+            <a class="resume-icon" href="https://linkedin.com/in/{{ . }}"><i class="fa fa-linkedin"></i></a>   
+        {{ end }}
+        <a class="resume-icon" href="{{ .Params.resume }}"><i class="fa fa-download"></i></a>
     </div>
 </div>
 {{ end }}

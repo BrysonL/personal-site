@@ -1,7 +1,7 @@
 .resume-container {
     display: flex;
     justify-content: space-between;
-    padding: 0 20%; /* Adjust the second value as needed */
+    padding: 0 25%; /* Adjust the second value as needed */
 }
 
 .jobs {
@@ -10,10 +10,19 @@
 
 .blurb {
     flex: 1;
+    text-align: right;
+}
+
+.years, .position, .company {
+    margin: 0px 0; /* Adjust the first value as needed. */
 }
 
 .job {
     margin-bottom: 30px;
+}
+
+.position {
+    margin-bottom: 3px;
 }
 
 .years {
@@ -22,10 +31,22 @@
     margin-bottom: 0px;
 }
 
-.position {
-    margin: 5px 0;
-}
-
 .company {
     font-size: 0.9em;
+}
+
+.blurb h2 {
+    font-size: 1.2em;
+    margin-bottom: 20px; /* Add some space below the header */
+}
+
+.blurb p {
+    font-size: 1em;
+    margin-bottom: 7px;
+}
+
+.resume-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
 }
