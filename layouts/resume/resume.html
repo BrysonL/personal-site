@@ -1,0 +1,22 @@
+{{ define "main" }}
+<link rel="stylesheet" href="/css/resume.css">
+
+{{ partial "header" . }}
+
+<div class="resume-container">
+    <div class="jobs">
+        {{ range .Params.positions }}
+        <div class="job">
+            <p class="years">{{ .years }}</p>
+            <h2 class="position">{{ .position }}</h2>
+            <p class="company">{{ .company }}</p>
+        </div>
+        {{ end }}
+    </div>
+    <div class="blurb">
+        <p>{{ .Params.blurb }}</p>
+        <a href="{{ .Params.linkedin }}">LinkedIn</a>
+        <a href="{{ .Params.resume }}">Download Resume</a>
+    </div>
+</div>
+{{ end }}

@@ -1,0 +1,31 @@
+.resume-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20%; /* Adjust the second value as needed */
+}
+
+.jobs {
+    flex: 2;
+}
+
+.blurb {
+    flex: 1;
+}
+
+.job {
+    margin-bottom: 30px;
+}
+
+.years {
+    font-size: 0.9em;
+    color: gray;
+    margin-bottom: 0px;
+}
+
+.position {
+    margin: 5px 0;
+}
+
+.company {
+    font-size: 0.9em;
+}
