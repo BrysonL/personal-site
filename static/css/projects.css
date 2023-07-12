@@ -1,0 +1,34 @@
+.project-item {
+    display: flex;
+    align-items: start;
+    margin: 20px 0;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+
+.project-thumbnail {
+    flex: 0 0 150px;  /* Adjust this to change thumbnail size */
+    margin-right: 20px;
+}
+
+.project-thumbnail img {
+    width: 100%;
+    height: auto;
+}
+
+.project-content {
+    flex: 1;
+}
+
+.project-title {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.project-description {
+    margin: 0;
+}
+
+.project-gallery {
+    margin: 0 30%;
+}

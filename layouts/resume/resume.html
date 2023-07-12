@@ -9,7 +9,7 @@
         <div class="job">
             <p class="years">{{ .years }}</p>
             <h5 class="position">{{ .position }}</h5>
-            <p class="company">{{ .company }}</p>
+            <p class="company"><a href="{{ .company_link }}">{{ .company }}</a></p>
         </div>
         {{ end }}
     </div>

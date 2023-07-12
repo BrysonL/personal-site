@@ -1,0 +1,21 @@
+{{ define "main" }}
+<link rel="stylesheet" href="/css/projects.css">
+
+{{ partial "header" . }}
+
+<div class="project-gallery">
+    {{ range .Pages }}
+    <div class="project-item">
+        <div class="project-thumbnail">
+            <a href="{{ .Permalink }}">
+                <img src="{{ .Params.thumbnail }}" alt="{{ .Title }}">
+            </a>
+        </div>
+        <div class="project-content">
+            <h2 class="project-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+            <p class="project-description">{{ .Params.description }}</p>
+        </div>
+    </div>
+    {{ end }}
+</div>
+{{ end }}
