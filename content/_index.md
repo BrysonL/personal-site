@@ -3,8 +3,6 @@
 
 i'm **bryson lockett**, a product manager by day and a tinkerer by night.
 
-i love (almost) all things tech.
-
 have a look at some of my working [projects].
 
 for more check out my [resume] and [blog].
