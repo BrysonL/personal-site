@@ -3,7 +3,13 @@
 
 {{ partial "header" . }}
 <div class="container blogpost">
-<h1>{{ .Title }}</h1>
-{{ .Content }}
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.tldr }}
+    <div class="tldr">
+        <h3>tl;dr</h3>
+        <p>{{ . | markdownify }}</p>
+    </div>
+    {{ end }}
+    {{ .Content }}
 </div>
 {{ end }}

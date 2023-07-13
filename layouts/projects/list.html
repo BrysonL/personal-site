@@ -8,11 +8,11 @@
     <div class="project-item">
         <div class="project-thumbnail">
             <a href="{{ .Permalink }}">
-                <img src="{{ .Params.thumbnail }}" alt="{{ .Title }}">
+                <img src="{{ .Params.thumbnail }}" alt="{{ .Params.shortitle }}">
             </a>
         </div>
         <div class="project-content">
-            <h2 class="project-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+            <h2 class="project-title"><a href="{{ .Permalink }}">{{ .Params.shorttitle }}</a></h2>
             <p class="project-description">{{ .Params.description }}</p>
         </div>
     </div>

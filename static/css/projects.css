@@ -42,3 +42,23 @@
         margin-right: 20px;
     }
 }
+
+.tldr {
+    padding: 1em;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 2em;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.tldr h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.tldr p {
+    margin-bottom: 0;
+    color: #666;
+}
