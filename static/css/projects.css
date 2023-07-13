@@ -32,3 +32,13 @@
 .project-gallery {
     margin: 0 30%;
 }
+
+@media (max-width: 768px) {
+    .project-gallery {
+        margin: 10px 25px;
+    }
+    .project-thumbnail {
+        flex: 0 0 0px;  /* Remove pic on small screens */
+        margin-right: 20px;
+    }
+}

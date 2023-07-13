@@ -1,5 +1,5 @@
 ---
-title: "Resume"
+title: "resume"
 positions:
   - position: "product manager ii → senior product manager"
     company: "guild"
@@ -23,5 +23,5 @@ positions:
     company_link: "https://www.cmsconnects.com/"
 blurb: "technically minded pm with experience in data science, marketplaces, and b2b products"
 linkedin: "https://www.linkedin.com/in/yourprofile"
-resume: "/files/bryson-lockett-resume.pdf" 
+resume: "../files/bryson-lockett-resume.pdf" 
 ---

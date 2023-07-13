@@ -1,15 +1,18 @@
 .resume-container {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     padding: 0 25%; /* Adjust the second value as needed */
 }
 
 .jobs {
     flex: 2;
+    order: 2;
 }
 
 .blurb {
     flex: 1;
+    order: 1;
     text-align: right;
 }
 
@@ -49,4 +52,19 @@
     width: 20px;
     height: 20px;
     margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    .resume-container {
+        flex-direction: column;
+        padding: 10px 25px;
+    }
+    .jobs {
+        order: 2;
+    }
+    .blurb {
+        order: 1;
+        text-align: left;
+        margin-bottom: 50px;
+    }
 }
