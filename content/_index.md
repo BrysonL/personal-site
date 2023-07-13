@@ -11,8 +11,8 @@ contact me via [email].
 
 
 
-[projects]: /projects
-[resume]: /resume
-[blog]: /blog
+[projects]: projects
+[resume]: resume
+[blog]: blog
 [@username]: https://twitter.com/username
 [email]: mailto:bryson@lockett.us
