@@ -223,3 +223,10 @@ h5 a:hover {
   padding: 20px 0;
   text-decoration: none !important;
 }
+
+pre {
+  padding: 1em;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow-x: auto; /* Allows for horizontal scrolling if the code is too wide */
+}

@@ -7,6 +7,19 @@ disqusShortname = ""
 googleAnalytics = ""
 theme = "hugo-sustain"
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    style = 'monokai'
+    lineNos = true
+    lineNumbersInTable = false
+
+
+
 [permalinks]
   post = "/:year/:month/:day/:slug"
 
