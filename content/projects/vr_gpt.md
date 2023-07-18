@@ -4,7 +4,7 @@ description: "oculus vr game that uses voice-to-text plus the openai completions
 thumbnail: "../img/vr-gpt.jpg"
 date: 2023-07-10
 title: "Voice-Activated VR Shooting Gallery"
-tldr: "This project uses Unity, the Oculus Interaction and Voice SDKs, the OpenAI Completions API (ChatGPT), and custom classes and scripts to create a 'shooting gallery' game that can be controlled by the player's speech. The Completions API takes an arbitrary string (generated using Wix.AI's speech-to-text transcription) and returns a target configuration in json form that is then parsed by the game to produce a novel configuration of targets. For a demo of the game, see [this video](#demo-vid)."
+tldr: "This project uses Unity, the Oculus Interaction and Voice SDKs, the OpenAI Completions API (ChatGPT), and custom classes and scripts to create a 'shooting gallery' game that can be controlled by the player's speech. The Completions API takes an arbitrary string (generated using Wix.AI's speech-to-text transcription) and returns a target configuration in JSON form that is then parsed by the game to produce a novel configuration of targets. For a demo of the game, see [this video](#demo-vid)."
 ---
 <div class="extra-space">
 
@@ -17,7 +17,7 @@ This VR App is a [Shooting Gallery](https://en.wikipedia.org/wiki/Shooting_galle
 
 I'll explain each in more detail below. 
 
-The VR environment setup is quite large (especially since I'm building from Meta's Interaction Toolkit demos) and I'm not sure exactly what is required for the app to build properly. This means I can't easily post the code on Github. I'll include some snippets here, but if you're interested in more code or would like me to figure out how to share the project, just let me know and I can look into it.
+The VR environment setup is quite large (especially since I'm building from Meta's Interaction Toolkit demos) and I'm not sure exactly what is required for the app to build properly. This means I can't easily post the code on Github. I'll include some snippets here, but if you're interested in more code or would like me to figure out how to share the project, let me know and I can look into it.
 </div>
 
 <div class="extra-space">
@@ -44,7 +44,7 @@ private void FireProjectile()
 {
     AudioManager.Instance.PlaySound(fireSound);
     GameObject projectile = Instantiate(projectilePrefab, firePoint.transform.position, firePoint.transform.rotation);
-    projectile.GetComponent<Projectile>().SetPlayer(player);  // set the player
+    projectile.GetComponent<Projectile>().SetPlayer(player); 
     Rigidbody rb = projectile.GetComponent<Rigidbody>();
     rb.velocity = transform.forward * projectileSpeed;
 }
@@ -71,11 +71,11 @@ void Update()
 }
 ```
 
-In the snippet above, you'll notice the `isPickedUp` variable. Since by default all scripts will always run `Update()`, we also have to set when the object is picked up and put down. This is managed using the Interactable Unity Event Wrapper and Interactable Group View scripts built in to the interaction toolkit.
+In the snippet above, you'll notice the `isPickedUp` variable. Since by default all scripts will always run `Update()`, we also have to set when the object is picked up and put down to avoid firing all guns any time the player presses the trigger. This is managed using the Interactable Unity Event Wrapper and Interactable Group View scripts built in to the interaction toolkit.
 
 The projectile script is quite simple, it stores the id of the player who fired the gun so that the game manager can update the correct player's score when a target is hit.
 
-A few improvements could be made to this set of scripts, though. I had trouble figuring out how to detect and act on interactions with an object which led to some hack-arounds like only listening to the right controller trigger (instead of the controller that was holding the gun) and assigning the gun to a particular player (not a problem in 1 player mode, which is the only mode) rather than detecting which player picked it up.
+A few improvements could be made to this set of scripts, though. I had trouble figuring out how to detect and act on interactions with an object which led to some hack-arounds like only listening to the right controller trigger (instead of the controller that was holding the gun) and assigning the gun to a single player in the editor (not a problem in 1 player mode, which is the only mode) rather than detecting which player picked it up. I think there's probably also a more efficient way to fire that wouldn't check on every update frame, potentially putting this script somewhere in the controller rather than on the gun. But at the scale of my game a few extra ops aren't a problem so I haven't started optimizing that.
 
 ##### Target
 The Target script is conceptually simple, but has a number of configuration options that make it more complex. At its core, the target tracks if/when it has been hit by a projectile, updates the corresponding player's score, and optionally executes a script like knocking the target down or freezing its motion:
@@ -124,7 +124,7 @@ public override void Move()
 }
 ```
 
-The other novel (to me) technique used with the targets is async coroutines. These functions run in parallel to the rest of the script (i.e. they don't block other parts of the script) and often wait for some amount of time (`yield return new WaitForSeconds(x)`) before running the rest of the function. In my code, they are used as a timer before doing simple actions like unfreezing a target or exploding the target after it has been alive for the set amount of time:
+The other novel (to me) technique used with the targets is async coroutines. These functions run in parallel to the rest of the script (i.e. they don't block other parts of the script) and often wait for some amount of time (e.g. `yield return new WaitForSeconds(x)`) before running the rest of the function. In my code, they are used as a timer before doing simple actions like unfreezing a target or exploding the target after it has been alive for the set amount of time:
 
 ```csharp
 IEnumerator Unfreeze()
@@ -250,6 +250,8 @@ With the single and sequence spawners built, you can see the shape of a programm
 
 There's a small amount of post processing that goes on top of this, but for the most part the JSON is parsed and passed directly to the spawn methods.
 
+The RandomTargetSpawner and GPTargetSpawner classes do what the names suggest; one randomly generates some sequences of targets while the other uses ChatGPT (explained in the next section) to generate the sequences of targets.
+
 You'll notice that the methods above only spawn sets of the moving targets and not the stationary target stands from the video above. That's because Unity was having trouble properly cloning my target stands. For some reason only two of the three targets would be copied and I couldn't figure out why. I tried different settings, sizes, orderings in the editor of sub objects, etc. but nothing worked. I decided that the stationary targets weren't needed for a proof of concept so moved on to the next section.
 
 </div>
@@ -284,9 +286,11 @@ www.SetRequestHeader("Authorization", "Bearer " + openaiKey);
 yield return www.SendWebRequest();
 
 ```
-Once the JSON format for the response was defined, the parsing is simple, so I'll omit that code. (Also note the `yield return www.SendWebRequest()` at the end, which shows you this comes from an IEnumerator method.)
+(Note the `yield return www.SendWebRequest()` at the end, which shows you this comes from an IEnumerator method.) You can see from the JSON format that I am using a regular call to the Completions endpoint. I could have used the [functions](https://openai.com/blog/function-calling-and-other-api-updates) mode, but that's not available in the playground so was meaningfully harder to test. Plus from my couple dozen tries the regular endpoint always gave the correct format, which is good enough for this proof of concept. Once the JSON format for the response was defined, the parsing is simple, so I'll omit that code.
 
-After the basic Completions call worked, I could add arbitrary text into the message to get a novel output. To let the user input that text with their voice, I used the [Meta Voice SDK](https://developer.oculus.com/documentation/unity/voice-sdk-overview/). This tutorial was harder to parse and less well documented than the previous tutorials (maybe because they don't expect anyone to get this far in their documentation), but at this point I had encountered most of the basic patterns like using events in the Unity editor so implementation was smooth. I could have used the OpenAI Whisper API, but that doesn't have a prebuilt unity package and also costs money. The fractions of a cent in Completions usage is already adding up on my unemployed bank account... There's not much special code in this section because it is relatively straightforward. The only gotcha I encountered with Wix was that it would often return a "full transcription" mid-recording (while the mic was still active) and if you didn't handle that properly you would end up overwriting the first (or nth) section of speech with the second (or nth+1) section of speech:
+After the basic Completions call worked, I could add arbitrary text into the message to get a novel output. To let the user input that text with their voice, I used the [Meta Voice SDK](https://developer.oculus.com/documentation/unity/voice-sdk-overview/). This tutorial was harder to parse and less well documented than the previous tutorials (maybe because they don't expect anyone to get this far in their documentation), but at this point I had encountered most of the basic patterns like using events in the Unity editor so implementation was smooth. I could have used the OpenAI Whisper API, but that doesn't have a prebuilt unity package and also costs money. The fractions of a cent in Completions usage is already adding up on my unemployed bank account... 
+
+There's not much special code in this section because it is relatively straightforward. The only gotcha I encountered with Wix was that it would often return a "full transcription" mid-recording (while the mic was still active) and if you didn't handle that properly you would end up overwriting the first (or nth) section of speech with the second (or nth+1) section of speech:
 ```csharp
 public void PartialTranscription(string text)
 {
