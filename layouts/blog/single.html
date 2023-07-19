@@ -1,0 +1,18 @@
+{{ define "main" }}
+
+<link rel="stylesheet" href="{{ "css/blog.css" | absURL }}">
+
+<!-- Header -->
+{{ partial "header" . }}
+
+<div class="container post-item">
+  <h1 class="post-title">{{ .Title }}</h1>
+    <div class="post-meta">
+        <span class="post-date">{{ .Date.Format "January 2, 2006" }}</span>
+    </div>
+  <div class="post-content">
+    {{ .Content }}
+  </div>
+</div>
+
+{{ end }}

@@ -1,26 +1,57 @@
 {{ define "main" }}
-  <!-- Header -->
-  {{ partial "header" . }}
 
-  <div class="container">
-    <h4 class="my-5">coming soon</h4>
-    <div class="panel">
-      <div class="panel-body">
-        {{ range .Data.Pages }}
-          <div class="row mb-2">
-            <div class="col-4">
-              <h5 style="text-align: right">
-                {{ .Date.Format "January 2, 2006" }}
-              </h5>
-            </div>
-            <div class="col-8">
-              <h5 style="text-align: left">
-                <b><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></b>
-              </h5>
-            </div>
+<link rel="stylesheet" href="{{ "css/blog.css" | absURL }}">
+
+<!-- Header -->
+{{ partial "header" . }}
+
+<div class="container">
+  <div class="panel">
+    <div class="panel-body">
+      <!-- First post -->
+      {{ with index .Data.Pages 0 }}
+      <div class="row mb-2">
+        <div class="col-12">
+          <h2>
+            <a href="{{ .RelPermalink }}">{{ .Params.shorttitle }}</a>
+          </h2>
+          <p class="post-date">{{ .Date.Format "January 2, 2006" | lower }}</p>
+          <div class="summary">
+            {{ with .Params.thumbnail }}
+            <img class="summary-thumbnail" src="{{ . | absURL }}" alt="{{ $.Title }}">
+            {{ end }}
+            <p class="summary-text">{{ .Summary | lower | markdownify }}</p>
           </div>
-        {{ end }}
+          <p><a href="{{ .RelPermalink }}">read more...</a></p>
+          <hr>
+        </div>
       </div>
+      {{ end }}
+
+      <!-- Older posts -->
+      <div class="row mb-2">
+        <div class="col-4"> </div>
+        <div class="col-8">
+          <h5 style="text-align: left">
+            <b>older posts</b>
+          </h5>
+        </div>
+      </div>
+      {{ range after 1 .Data.Pages }}
+      <div class="row mb-2">
+        <div class="col-4">
+          <h5 style="text-align: right">
+            {{ .Date.Format "January 2, 2006" | lower }}
+          </h5>
+        </div>
+        <div class="col-8">
+          <h5 style="text-align: left">
+            <a href="{{ .RelPermalink }}">{{ .Params.shorttitle }}</a>
+          </h5>
+        </div>
+      </div>
+      {{ end }}
     </div>
   </div>
+</div>
 {{ end }}

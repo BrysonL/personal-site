@@ -303,7 +303,7 @@ public void FullTranscription(string text)
     _uiTextPro.text = _text;
 }
 ```
-
+This essentially stores a running string of all the transcriptions. Just make sure to clear the string (`_text = ""`) after you use it (in this case, after it is sent to the Completions API).
 
 </div>
 
