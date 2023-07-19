@@ -16,17 +16,13 @@
             <a href="{{ .RelPermalink }}">{{ .Params.shorttitle }}</a>
           </h2>
           <p class="post-date">{{ .Date.Format "January 2, 2006" | lower }}</p>
-          <div class="summary">
-            {{ with .Params.thumbnail }}
-            <img class="summary-thumbnail" src="{{ . | absURL }}" alt="{{ $.Title }}">
-            {{ end }}
-            <p class="summary-text">{{ .Summary | lower | markdownify }}</p>
-          </div>
+          <p class="summary-text">{{ .Summary | lower | markdownify }}</p>
           <p><a href="{{ .RelPermalink }}">read more...</a></p>
           <hr>
         </div>
       </div>
       {{ end }}
+      
 
       <!-- Older posts -->
       <div class="row mb-2">
