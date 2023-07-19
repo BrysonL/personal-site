@@ -1,7 +1,7 @@
 ---
 ---
 
-i'm **bryson lockett**, a product manager by day and a tinkerer by night.
+i'm **bryson lockett**, a product manager and occasionally an engineer.
 
 have a look at some of my working [projects].
 
