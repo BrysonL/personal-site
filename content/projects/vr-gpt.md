@@ -2,7 +2,7 @@
 shorttitle: "voice-activated vr shooting gallery"
 description: "oculus vr game that uses voice-to-text plus the openai completions api to dynamically generate target configurations in a shooting gallery based on arbitrary user speech"
 thumbnail: "../img/vr-gpt.jpg"
-date: 2023-07-10
+date: 2023-07-18
 title: "Voice-Activated VR Shooting Gallery"
 tldr: "This project uses Unity, the Oculus Interaction and Voice SDKs, the OpenAI Completions API (ChatGPT), and custom classes and scripts to create a 'shooting gallery' game that can be controlled by the player's speech. The Completions API takes an arbitrary string (generated using Wix.AI's speech-to-text transcription) and returns a target configuration in JSON form that is then parsed by the game to produce a novel configuration of targets. For a demo of the game, see [this video](#demo-vid)."
 ---

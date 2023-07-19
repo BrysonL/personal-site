@@ -217,6 +217,9 @@ h5 a:hover {
   font-size: 18px;
 }
 
+code {
+  font-family: monospace;
+}
 /* Footer  */
 .footer {
   border-bottom: 5px solid #27a822;
