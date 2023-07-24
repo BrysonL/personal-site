@@ -4,12 +4,12 @@ thumbnail: "img/puzzle-bobble-strategy.jpg"
 shorttitle: "puzzle bobble strategy"
 date: 2023-07-18
 ---
-Recently, I was visiting family with an arcade simulator (not [this exact one](https://a.co/d/hJeHHxd), but one like it) that lets two players play a variety of classic arcade games. One of the games we played was called [Puzzle Bobble](https://en.wikipedia.org/wiki/Puzzle_Bobble), where players try to connect groups of bobbles (balls) by shooting new bobbles at the bobbles already on the screen. When three or more bobbles of the same color touch as a result of your shot, those bobbles disappear from the screen. If you free bobbles by popping all the bobbles that connect them to the ceiling of the game, they fall off of your screen and onto your opponent's. The goal is to not let the bobbles fill your screen. The first player with a bobble crossing the bottom of their screen loses.
+Recently, I was visiting family with an arcade simulator (not [this exact one](https://a.co/d/hJeHHxd), but one like it) that lets two players play a variety of classic arcade games. One of the games we played was called [Puzzle Bobble](https://en.wikipedia.org/wiki/Puzzle_Bobble), where players try to connect groups of bobbles (balls) by shooting new bobbles at the bobbles already on the screen. When three or more bobbles of the same color touch as a result of your shot, those bobbles disappear from the screen. If you free bobbles by popping all the bobbles that connect them to the ceiling of the game, they fall off of your screen and onto your opponent's. The goal is to not let the bobbles fill your screen. The first player with a bobble crossing the bottom of their screen loses. Surprisingly, this game has something to say about business strategy.
 
 <!--more-->
 
 Here's a demo from some random dude on YouTube:
-{{< youtube YrPxbx6SZps >}}
+{{< youtube id="YrPxbx6SZps" autoplay="true" t="33" >}}
 
 (If you skipped over that video but do not fully understand how the game works, the rest of this post will make no sense. Please go back and watch the video. Skip to any time after the first minute and it'll only take a few seconds.)
 
