@@ -9,7 +9,7 @@ Recently, I was visiting family with an arcade simulator (not [this exact one](h
 <!--more-->
 
 Here's a demo from some random dude on YouTube:
-{{< youtube id="YrPxbx6SZps" autoplay="true" t="33" >}}
+{{< youtube id="YrPxbx6SZps" autoplay="true" start_time="33" >}}
 
 (If you skipped over that video but do not fully understand how the game works, the rest of this post will make no sense. Please go back and watch the video. Skip to any time after the first minute and it'll only take a few seconds.)
 
