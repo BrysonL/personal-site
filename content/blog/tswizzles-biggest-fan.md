@@ -48,9 +48,11 @@ Armed with a rainbow of sharpies, full knowledge of the shirt's design, and an a
 Thinking fast, I simply cut an inch off of both sleeves and started over on the triangles. #MVP #Prototype.
 
 #### R: Result
-Et voila! The outfits were a great success at the concert, we even had a few people take pictures of us because it was so cute that a big ole husband would dress up with his wife for her dream concert.[^10]
+Et voila! 
 
 {{< img src="img/blog/taylor-result.jpg" alt="Clue 1" class="container extra-space">}}
+
+The outfits were a great success at the concert, we even had a few people take pictures of us because it was so cute that a big ole husband would dress up with his wife for her dream concert.[^10]
 
 
 [^1]: It would have been 10 of 10, but one year I put my mother-in-law's new Amazon Echo on my Spotify when setting it up and she must have had Johnny Cash on repeat the whole year. Thanks a lot, Debbie.
