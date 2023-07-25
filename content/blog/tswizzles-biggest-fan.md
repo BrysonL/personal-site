@@ -38,7 +38,7 @@ In addition to the iconic shirt, they are also wearing plaid pajama pants. After
 
 {{< img src="img/blog/taylor-clue4.jpg" alt="Clue 4" class="container">}}
 
-After this investigation, I am reasonably sure that the shirt says Coffey on the back, so that's what I went with. I am almost certain that no one at the concert got the reference, but it's art for art's sake. C'est la vie.
+After this investigation, I am reasonably sure that the shirt says Coffey on the back, so that's what I went with. I am also reasonably sure that no one at the concert got the reference, but it's art for art's sake. C'est la vie.
 
 #### Interlude: Pride cometh before the fall
 Armed with a rainbow of sharpies, full knowledge of the shirt's design, and an afternoon, I set to work on the shirt. After an hour and a half,[^9] I had finished the text and collar and moved on to the sleeves. Vanity of vanities! I made the pointy things point the wrong way:
