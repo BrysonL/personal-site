@@ -54,6 +54,10 @@
     font-size: 0.8em;
 }
 
+img {
+    margin-bottom: 1rem
+}
+
 
 @media (max-width: 768px) {
     .post-gallery {
