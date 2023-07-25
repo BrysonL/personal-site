@@ -42,6 +42,19 @@
     hyphens: auto;
 }
 
+.footnote-ref {
+    text-decoration: none;
+}
+
+.footnote-backref {
+    text-decoration: none;
+}
+
+.footnotes {
+    font-size: 0.8em;
+}
+
+
 @media (max-width: 768px) {
     .post-gallery {
         margin: 10px 25px;

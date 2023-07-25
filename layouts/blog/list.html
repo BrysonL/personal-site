@@ -13,7 +13,7 @@
       <div class="row mb-2">
         <div class="col-12">
           <h2>
-            <a href="{{ .RelPermalink }}">{{ .Params.shorttitle }}</a>
+            <a href="{{ .RelPermalink }}">{{ .Title | lower }}</a>
           </h2>
           <p class="post-date">{{ .Date.Format "January 2, 2006" | lower }}</p>
           <p class="summary-text">{{ .Summary | lower | markdownify }}</p>
@@ -42,7 +42,7 @@
         </div>
         <div class="col-8">
           <h5 style="text-align: left">
-            <a href="{{ .RelPermalink }}">{{ .Params.shorttitle }}</a>
+            <a href="{{ .RelPermalink }}">{{ .Title | lower }}</a>
           </h5>
         </div>
       </div>
