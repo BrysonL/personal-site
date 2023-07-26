@@ -4,7 +4,7 @@ title = "bryson lockett"
 # Enable comments by entering your Disqus shortname
 disqusShortname = ""
 # Enable Google Analytics by entering your tracking code
-googleAnalytics = ""
+googleAnalytics = "G-1T332YZ9J2"
 theme = "hugo-sustain"
 
 [markup]
