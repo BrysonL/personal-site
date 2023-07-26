@@ -54,6 +54,43 @@
     margin-right: 10px;
 }
 
+.details {
+    display: none;
+    margin-top: 0px;
+}
+
+.detail-button {
+    margin-bottom: 0px;
+}
+
+.detail-button:hover .arrow {
+    border-color: #267723;
+}
+
+.details ul, .details ol {
+    margin-top: 0px;
+}
+
+.arrow {
+    border: solid #27a822;
+    border-width: 0 1.75px 1.75px 0;
+    display: inline-block;
+    padding: 3px;
+    vertical-align: middle;
+    transition: all 0.3s ease;
+    margin-left: 2px;
+    margin-bottom: 0px;
+}
+
+.right {
+    transform: rotate(-45deg) translateY(0);
+}
+
+.down {
+    transform: rotate(45deg) translateY(-3px); /* shift the arrow slightly upwards */
+}
+
+
 @media (max-width: 768px) {
     .resume-container {
         flex-direction: column;

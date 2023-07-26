@@ -10,6 +10,12 @@
             <p class="years">{{ .years }}</p>
             <h5 class="position">{{ .position }}</h5>
             <p class="company"><a href="{{ .company_link }}">{{ .company }}</a></p>
+            <!-- add a button or link to toggle the job details -->
+            <a href="#" class="detail-button toggle-details company">see more <i class="arrow right"></i> </a>
+            <!-- wrap the job details in a div with a 'details' class -->
+            <div class="details">
+                <p>{{ .details | markdownify }}</p>
+            </div>
         </div>
         {{ end }}
     </div>
@@ -22,4 +28,25 @@
         <a class="resume-icon" href="{{ .Params.resume }}"><i class="fa fa-download"></i></a>
     </div>
 </div>
+
+<!-- add some JavaScript at the bottom of your template to handle the click event -->
+<script>
+    document.querySelectorAll('.toggle-details').forEach(button => {
+        button.addEventListener('click', (e) => {
+            e.preventDefault();
+            const details = button.nextElementSibling;
+            const arrow = button.querySelector('.arrow');
+            if (details.style.display === 'block') {
+                details.style.display = 'none';
+                arrow.classList.remove('down');
+                arrow.classList.add('right');
+            } else {
+                details.style.display = 'block';
+                arrow.classList.remove('right');
+                arrow.classList.add('down');
+            }
+        });
+    });
+</script>
+
 {{ end }}
