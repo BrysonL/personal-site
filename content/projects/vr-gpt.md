@@ -1,5 +1,4 @@
 ---
-shorttitle: "voice-activated vr shooting gallery"
 description: "oculus vr game that uses voice-to-text plus the openai completions api to dynamically generate target configurations in a shooting gallery based on arbitrary user speech"
 thumbnail: "../img/vr-gpt.jpg"
 date: 2023-07-18
@@ -156,7 +155,7 @@ Here's a demo of what we have at this point in the build process:
 
 Now that the core mechanics of the game are in place, we can start working on creating a game that has more variety than a static target setup. This is mostly managed by a set of target spawner classes (TargetSpawner plus child classes RandomTargetSpawner and GPTargetSpawner).
 
-For the basic target spawner, you need a prefab (explained above) and an updated set of parameters for that prefab (unless you want all targets to have the same characteristics). My target spawners are cased on the type of target (random, circle, or sine movement pattern). To spawn a target, you need to provide the movement params and optionally can control the additional features like exploding targets. In the code below, you can see all of the parameters that we need to set and can also see how the singleton pattern for the Game Manager works (line 25):
+For the basic target spawner, you need a prefab (explained above) and an updated set of parameters for that prefab (unless you want all targets to have the same characteristics). My target spawners are cased on the type of target (random, circle, or sine movement pattern). To spawn a target, you need to provide the movement params and optionally can control the additional features like exploding targets. In the code below, you can see all of the parameters that we need to set (line 1) and can also see how the singleton pattern for the Game Manager works (line 25):
 
 ```csharp {hl_lines=[1,25]}
 private void SpawnTarget(int targetChoice, float speed, float radius, float offset, float x, float y, float z, bool singleShot = false, bool exploding = false, float explodeDelay = 0.0f)

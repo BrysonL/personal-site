@@ -1,5 +1,4 @@
 ---
-shorttitle: "toss-tac-toe"
 description: "basic oculus vr version of tic-tac-toe where squares are selected by throwing balls into them"
 thumbnail: "../img/toss-tac-toe.jpg"
 date: 2023-07-10
