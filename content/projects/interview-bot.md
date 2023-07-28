@@ -214,7 +214,7 @@ With all the classes built and connected together, here's the Interview Bot so f
 </div>
 
 
-I am not sure if I'll continue working on this, but I can think of a few cool ways to extend this:
+I am not sure if I'll continue working on this project, but I can think of a few cool ways to extend it:
 1. Turn the interview bot into an interviewer for mock interviews. You could even have it score you after the interview.
 2. Try out some different completion models like Llama or Claude and compare the quality of the answers.
 3. Modify the prompt to give you inspiration instead of write the whole response for you. For example, in a behavioral interview it could have a list of your past stories and pick the best one for that specific question, then remind you what that is and give you a couple key details to work into your response.
