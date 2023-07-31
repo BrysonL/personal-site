@@ -6,6 +6,7 @@ date: 2023-07-25
 What follows is the harrowing ordeal of one man's quest to make the perfect Era's tour outfit. In the process I made what may actually be a novel discovery in the thoroughly investigated world of Taylor Swift. It all started on November 16, 2022...
 
 <!--more-->
+#### Who's Taylor Swift anyway?
 
 The Taylor Swift Eras Tour tickets had gone on sale two days prior in what [some might call a fiasco](https://www.bbc.com/news/entertainment-arts-64384304), and despite having T Swizzle as my #1 Spotify artist 9 of the last 10 years[^1] I was not a Verified Fan. Over many hours that Wednesday,[^2] I tried and failed to get tickets in Philly, Tampa, and Nashville. On the 253rd try I managed to secure tickets in Denver in exchange for 10% of my income over the next 5 years and the naming rights to my first child or startup, whichever comes first.[^3]
 
@@ -21,6 +22,8 @@ In this video, Taylor is the unassuming band-geek-girl-next-door who has fallen 
 
 In addition to the iconic shirt, they are also wearing plaid pajama pants. After spending multiple hours scouring the internet and placing 4 orders with Amazon and Walmart, I secured passable replicas.[^6] Now, though, we come to the main problem in this costume design. Shirts have both a front and a back, and despite watching [the music video](https://www.youtube.com/watch?v=VuNIsY6JdUw) a half dozen times, I could not get a clear view of what was on the back of the shirt. Time for some investimagatin'.
 
+#### Don’t pretend it’s such a mystery
+
 **Clue #1**: At 37 seconds in the music video, there is a shot from behind of Taylor dancing in front of the mirror and for a fraction of a second you can see the top half of what is written on the shirt[^7]:
 
 {{< img src="img/blog/taylor-clue1.jpg" alt="Clue 1" class="container">}}
@@ -35,11 +38,15 @@ In addition to the iconic shirt, they are also wearing plaid pajama pants. After
 
 After this investigation, I am reasonably sure that the shirt says Coffey on the back, so that's what I went with. Fairly anticlimactic as I have no idea what it means beyond potentially a name, but googling the alleged band mate plus that name didn't yield any fruit. I am also reasonably sure that no one at the concert got the reference, but it's art for art's sake. C'est la vie.
 
+#### This is why we can't have nice things
+
 With my rainbow of sharpies, full knowledge of the shirt's design, and an afternoon, I set to work on the shirt. After an hour and a half,[^9] I had finished the text and collar and moved on to the sleeves. Vanity of vanities! I made the pointy things point the wrong way:
 
 {{< img src="img/blog/taylor-mistake.jpg" alt="Oops" class="container">}}
 
 Thinking fast, I simply cut an inch off of both sleeves and started over on the triangles. #MVP #Prototype
+
+#### Long live the magic we made
 
 Et voila! 
 
