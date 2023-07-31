@@ -36,7 +36,6 @@ theme = "hugo-sustain"
   Github        = "brysonl"
   Email         = "bryson@lockett.us"
   LinkedIn      = "bryson-lockett"
-  RSS           = "/blog/index.xml"
 
 ## Main Menu
 [[menu.main]]
