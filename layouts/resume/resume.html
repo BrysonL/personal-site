@@ -14,7 +14,7 @@
             <a href="#" class="detail-button toggle-details company">see more <i class="arrow right"></i> </a>
             <!-- wrap the job details in a div with a 'details' class -->
             <div class="details">
-                <p>{{ .details | markdownify }}</p>
+                <p>{{ .details | lower | markdownify }}</p>
             </div>
         </div>
         {{ end }}
