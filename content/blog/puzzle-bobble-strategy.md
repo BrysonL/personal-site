@@ -18,7 +18,7 @@ Obviously the way to win this game is to stack up a bunch of bobbles on the same
 
 In other words, even though it was a multiplayer game, the best strategy was to ignore the other player(s) and execute well. In a diagram, the two puzzle bobble strategies look like this:
 
-{{< img src="img/blog/pbs-pbstrat.jpeg" alt="Good vs Bad Puzzle Bobble Strategy" class="container extra-space">}}
+{{< img src="img/blog/pbs/pbs-pbstrat.jpeg" alt="Good vs Bad Puzzle Bobble Strategy" class="container extra-space">}}
 
 I saw the placement of each bobble as a strategic decision in Puzzle Bobble that contributes to your goal of winning the game, analogous to each business decision you make contributing to the overall strength of your business or product. Taking the strategy analogy one step further, maybe strategy should focus more on executing against core objectives than reacting to outside pressures. That stood in contrast to what I thought I knew about strategy - when there is more than one player in a game/market/etc., I thought you should treat the game as such. Strategy is supposed to be chess, or at the very least checkers, not solitaire.
 
@@ -26,7 +26,7 @@ But, thinking back on my experience as a PM, even when I was working in markets 
 
 In a diagram, the two business strategies look like this:
 
-{{< img src="img/blog/pbs-businessstrat.jpeg" alt="Good vs Bad Puzzle Bobble Strategy" class="container extra-space">}}
+{{< img src="img/blog/pbs/pbs-businessstrat.jpeg" alt="Good vs Bad Puzzle Bobble Strategy" class="container extra-space">}}
 
 Similarly, if you look at [Hamilton Helmer's 7 Powers strategy framework](https://7powers.com/) - where the eponymous powers are scale economies, network economies, counter-positioning, switching costs, branding, cornered resource, and process power - only three of the seven (counter-positioning, cornered resource, and switching costs) require a second player and arguably that second player's presence or strategies don't influence your strategy except in the counter-positioning case. Most of them rely on a good set of objectives (e.g. increase affinity between nodes in our network, earn our consumers' trust, etc.) rather than focusing on the fact that there are other players in the environment and figuring out how to mess with them.
 

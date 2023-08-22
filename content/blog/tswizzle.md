@@ -26,7 +26,7 @@ In addition to the iconic shirt, they are also wearing plaid pajama pants. After
 
 **Clue #1**: At 37 seconds in the music video, there is a shot from behind of Taylor dancing in front of the mirror and for a fraction of a second you can see the top half of what is written on the shirt[^7]:
 
-{{< img src="img/blog/taylor-clue1.jpg" alt="Clue 1" class="container">}}
+{{< img src="img/blog/taylor/taylor-clue1.jpg" alt="Clue 1" class="container">}}
 
 **Clue #2**: /u/MessThatYouWanted on Reddit [pointed out that there is a behind the scenes video of YBWM](https://www.reddit.com/r/TaylorSwift/comments/cn4t52/comment/ew6s23h/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button), and also that the shirt is a shirt from her band mate and not one made specifically for the music video.[^8]
 
@@ -34,7 +34,7 @@ In addition to the iconic shirt, they are also wearing plaid pajama pants. After
 
 **Clue #4**: The [behind the scenes video for *You Belong With Me*](https://youtu.be/SoeIoLL-sJI) is a gold mine of information. We learn that not only is the shirt from Taylor's band mate, but that it was a shirt the band mate made at band camp. Very nice! In addition, around the 6:52 mark you get a quick view of the back of the shirt as Taylor is dancing. There is no super clear view so you have to piece together the words from a couple shots:
 
-{{< img src="img/blog/taylor-clue4.jpg" alt="Clue 4" class="container">}}
+{{< img src="img/blog/taylor/taylor-clue4.jpg" alt="Clue 4" class="container">}}
 
 After this investigation, I am reasonably sure that the shirt says Coffey on the back, so that's what I went with. Fairly anticlimactic as I have no idea what it means beyond potentially a name, but googling the alleged band mate plus that name didn't yield any fruit. I am also reasonably sure that no one at the concert got the reference, but it's art for art's sake. C'est la vie.
 
@@ -42,7 +42,7 @@ After this investigation, I am reasonably sure that the shirt says Coffey on the
 
 With my rainbow of sharpies, full knowledge of the shirt's design, and an afternoon, I set to work on the shirt. After an hour and a half,[^9] I had finished the text and collar and moved on to the sleeves. Vanity of vanities! I made the pointy things point the wrong way:
 
-{{< img src="img/blog/taylor-mistake.jpg" alt="Oops" class="container">}}
+{{< img src="img/blog/taylor/taylor-mistake.jpg" alt="Oops" class="container">}}
 
 Thinking fast, I simply cut an inch off of both sleeves and started over on the triangles. #MVP #Prototype
 
@@ -50,7 +50,7 @@ Thinking fast, I simply cut an inch off of both sleeves and started over on the 
 
 Et voila! 
 
-{{< img src="img/blog/taylor-result.jpg" alt="Clue 1" class="container">}}
+{{< img src="img/blog/taylor/taylor-result.jpg" alt="Clue 1" class="container">}}
 
 The outfits were a great success at the concert. We even had a few people take pictures of us because it was so cute that a big ole husband would dress up for his wife's dream concert.[^10]
 
