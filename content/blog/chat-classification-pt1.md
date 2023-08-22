@@ -42,7 +42,7 @@ A full analysis would take much longer than I'm willing to give it and you all w
 * Most Active Sender: PF with 16125 messages
 * Least Active Sender: DT with 6793 messages
 
-(In case you're curious, the most heavily-messaged day was spent discussing [shiny pokemon](https://bulbapedia.bulbagarden.net/wiki/Shiny_Pok%C3%A9mon) and making fun of each other for high school crushes.) Most noteworthy imo is the sheer volume of messages we sent. Over 15 messages a day for 10 years! Let's see if that's consistent over time by plotting the 30 day moving average of messages per day both in total and per sender:
+(In case you're curious, the most heavily-messaged day was spent discussing [shiny pokemon](https://bulbapedia.bulbagarden.net/wiki/Shiny_Pok%C3%A9mon) and making fun of each other for high school crushes.) I think the most noteworthy stat is the sheer volume of messages we sent. Over 15 messages a day for 10 years! Let's see if that's consistent over time by plotting the 30 day moving average of messages per day both in total and per sender:
 
 {{< img src="img/blog/classification/class-movingaverage.png" alt="30-day moving average of messages per day" class="container">}}
 
