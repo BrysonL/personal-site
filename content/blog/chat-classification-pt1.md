@@ -1,6 +1,5 @@
 ---
 title: "Group Chat Classificiation Part 1: Data Loading and Visualization"
-thumbnail: "img/puzzle-bobble-strategy.jpg"
 date: 2023-08-22
 draft: False
 ---
@@ -39,8 +38,8 @@ A full analysis would take much longer than I'm willing to give it and you all w
 * Most Messages in a Day: 830
 * Average Messages per Day: 15.65
 * Average Messages per Active Day: 27.10
-* Most Active Sender: PF with 16125 messages
-* Least Active Sender: DT with 6793 messages
+* Most Active Sender: Bean with 16125 messages
+* Least Active Sender: Dink with 6793 messages
 
 (In case you're curious, the most heavily-messaged day was spent discussing [shiny pokemon](https://bulbapedia.bulbagarden.net/wiki/Shiny_Pok%C3%A9mon) and making fun of each other for high school crushes.) I think the most noteworthy stat is the sheer volume of messages we sent. Over 15 messages a day for 10 years! Let's see if that's consistent over time by plotting the 30 day moving average of messages per day both in total and per sender:
 
@@ -50,11 +49,11 @@ You can see from the first chart that we spiked pretty hard the first year of th
 
 {{< img src="img/blog/classification/class-sendercount.jpg" alt="Messages per sender" class="container">}}
 
-It's not perfectly even (DT has sent ~40% as many messages as PF), but the proportions are close enough that I think it will be an interesting problem. This is confirmed by calculating the [Entropy](https://en.wikipedia.org/wiki/Entropy_(information_theory)) of the distribution. Read that link to better understand, but essentially entropy is a measure of how much uncertainty is intrinsic to our data set. Higher values of entropy mean the data are more random and thus harder to predict or classify. Using a log of base two (giving us the resulting entropy in bits), the entropy of our distribution is 2.25 compared to the maximum entropy (if the messages were equally distributed among senders) of 2.32, confirming that this is indeed a "hard" classification problem.  
+It's not perfectly even (Dink has sent ~40% as many messages as Bean), but the proportions are close enough that I think it will be an interesting problem. This is confirmed by calculating the [Entropy](https://en.wikipedia.org/wiki/Entropy_(information_theory)) of the distribution. Read that link to better understand, but essentially entropy is a measure of how much uncertainty is intrinsic to our data set. Higher values of entropy mean the data are more random and thus harder to predict or classify. Using a log of base two (giving us the resulting entropy in bits), the entropy of our distribution is 2.25 compared to the maximum entropy (if the messages were equally distributed among senders) of 2.32, confirming that this is indeed a "hard" classification problem.  
 
 {{< img src="img/blog/classification/class-hourlydistribution.png" alt="Hourly distribution of messages" class="container">}}
 
-Looking at the hourly distribution of messages, we see that for the most part all senders are pretty consistent. We're all most active in the evening (peaking around 9pm) and relatively inactive in the morning. Out of all the 50k messages, only 7 were sent between 3 and 4am ET and DT and BL are the only senders who have sent messages every hour of the day.
+Looking at the hourly distribution of messages, we see that for the most part all senders are pretty consistent. We're all most active in the evening (peaking around 9pm) and relatively inactive in the morning. Out of all the 50k messages, only 7 were sent between 3 and 4am ET and Dink and Carn are the only senders who have sent messages every hour of the day.
 
 {{< img src="img/blog/classification/class-monthdistribution.jpg" alt="Monthly distribution of messages" class="container">}}
 

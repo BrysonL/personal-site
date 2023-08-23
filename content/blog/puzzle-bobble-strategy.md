@@ -1,6 +1,5 @@
 ---
 title: "Puzzle Bobble Strategy"
-thumbnail: "img/puzzle-bobble-strategy.jpg"
 date: 2023-07-18
 ---
 Recently, I was visiting my middle-school cousins who have an arcade simulator that lets two players play a variety of classic video games (one like [this](https://a.co/d/hJeHHxd)). One of the games we played was called [Puzzle Bobble](https://en.wikipedia.org/wiki/Puzzle_Bobble). I don't usually learn anything about business strategy from a '90s arcade game, but the unintuitive winning strategy for this one made me question that assumption.

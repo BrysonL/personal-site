@@ -1,6 +1,5 @@
 ---
 title: "What's on the shirt, Taylor?"
-thumbnail: "img/t-swizzle.jpeg"
 date: 2023-07-25
 ---
 What follows is the harrowing ordeal of one man's quest to make the perfect Era's tour outfit. In the process I made what may actually be a novel discovery in the thoroughly investigated world of Taylor Swift. It all started on November 16, 2022...
