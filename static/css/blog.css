@@ -1,5 +1,5 @@
 .post-item {
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     align-items: start;
     margin: 20px auto;
@@ -69,7 +69,7 @@ img {
 table {
     border-collapse: collapse;
     margin: 0 auto; /* Center table horizontally */
-    width: 30%; /* Adjust width as needed */
+    /* width: 30%; /* Adjust width as needed */
 }
 
 /* Table cells */

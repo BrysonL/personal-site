@@ -14,7 +14,7 @@ This blog is the first in a many part series about me learning about classificat
 ### Group chat background
 You might be thinking, "Wait, did you just say you have a decade-long group chat with over 50k messages?" Why yes, yes I did. These friends and I have known each other for a very long time (most of us for 25+ years) and have been using this group chat through graduations, weddings, births, moves, elections, Minecraft servers, startup ideas, etc., etc., etc.
 
-To protect the privacy of these friends and to protect us all from any unsavory opinions of teenage me, I'm not going to be sharing the raw messages or the full names of the friends involved. That said, I'll try to write the code in a message-agnostic way so that you can run it on your own messages if you so desire.
+To protect the privacy of these friends and to protect us all from any unsavory opinions of teenage me, I'm not going to be sharing the raw messages or the real names of the friends involved. That said, I'll try to write the code in a message-agnostic way so that you can run it on your own messages if you so desire.
 
 ### Ingesting and cleaning data
 
