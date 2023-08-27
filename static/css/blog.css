@@ -54,6 +54,13 @@
     font-size: 0.8em;
 }
 
+.tall-img {
+    max-height: 300px;
+    width: auto;
+    height: 100%;
+    display: block;
+}
+
 img {
     margin-bottom: 1rem
 }

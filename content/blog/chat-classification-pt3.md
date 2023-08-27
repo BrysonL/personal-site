@@ -4,13 +4,15 @@ date: 2023-08-27
 draft: False
 ---
 
-Welcome to Part 3 in my blog series on classification! In [part 1](../chat-classification-pt1), we loaded a decade's worth of group chat messages into Python and in [part 2](../chat-classification-pt2) we learned how to quantify model accuracy and tested that knowledge with a basic model.
+Welcome to part 3 in my blog series on classification! In [part 1](../chat-classification-pt1), we loaded a decade's worth of group chat messages into Python and in [part 2](../chat-classification-pt2) we learned how to quantify model accuracy and tested that knowledge with a basic model.
 
 Every model from here on out will rely on individual, measurable properties about each message to help predict who sent that message. This information could be anything related to the message that we can measure - what time of day was it sent? how many words did they use? who sent the message directly before this one? 
 
 In machine learning, these pieces of information are called "features". In later blogs, we may encounter models that can automatically detect or generate features from input data or more advanced feature generation methods, but for now this will be similar to the basic data analysis in part 1.
 
 In this blog, we'll examine some techniques for feature identification and highlight some interesting trends we see with potential features in our dataset.
+
+<!-- more -->
 
 ### Background and fine print
 Often times in (textbook) classification problems, you will be provided a dataset that already has the features identified. In our case, however, we are left to fend for ourselves. Each model we use will likely place its own restrictions and assumptions on the types of features we can use (e.g. the relative scales of each feature, the distribution of the values of a feature across the dataset, the independence of features in the model), but for the purpose of this blog we'll simply try to identify plausible features and transform and modify them as needed later. I'll note up front that there are an almost infinite number of features and techniques we could apply, and in industry you will often spend as much time on feature extraction as you do on model architecture. This isn't industry and since my goal here is to learn the techniques, I will be doing very basic feature identification and analysis that I can finish in an afternoon. As we progress through future blogs, we will likely continue to add features to our models. I'll try to cover those when they happen, but you can also check the [feature extraction code](https://github.com/BrysonL/groupchat-classification/blob/345013bf9ff7ec4ec6f8685231b56d9f710ea63d/text_message.py#L38) to see what's been added since this blog.
@@ -100,4 +102,4 @@ You can check out the [Feature Extraction Notebook](https://github.com/BrysonL/g
 ### Conclusion
 In this blog, we discussed what a feature was and how to extract them from your dataset. We noted some important considerations like having a hypothesis for each feature instead of extracting them willy nilly and wrote some code to extract features from our Messages. We talked about the different types of features (numerical and categorical), the specific sources we can use in our dataset (the current message or previous messages), and some categories of features we may consider. We also went through the exercise of extracting and examining a few features that turned out to be meaningful in our dataset. Model building is an iterative process, and as we learn more about our data through the modeling process we'll add more features to our extraction code.
 
-Now that we have our features extracted, we're ready to move to our first real model! Next time, we'll use some basic regressions (y=mx+b stuff) to see how much improvement we can make with traditional methods. Stay tuned for the next post!
+Now that we have our features extracted, we're ready to move to our first real model! Next time, we'll use some basic linear models (y=mx+b stuff) to see how much improvement we can make with traditional methods. Stay tuned for the next post!
