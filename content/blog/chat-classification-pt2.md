@@ -113,7 +113,7 @@ class MostFrequentClassClassifier(BaseModel):
 
 When we train the model, we use `argmax` to find the index of the class corresponding to the "one-hot" label, count up the number of times each index (aka sender) appeared, and then select the index that has appeared the most frequently. When we predict, we simply return a one-hot vector with the most frequent class set to 1. If you're confused about the specific pytorch functions used, ask ChatGPT.
 
-You can find the full [BaseModel](https://github.com/BrysonL/groupchat-classification/blob/main/model.py) and [MostFrequentClassClassifier](https://github.com/BrysonL/groupchat-classification/blob/main/most_frequent_classifier.py) code on Github.
+You can find the full [BaseModel](https://github.com/BrysonL/groupchat-classification/blob/main/models/model.py) and [MostFrequentClassClassifier](https://github.com/BrysonL/groupchat-classification/blob/main/models/most_frequent_classifier.py) code on Github.
 
 ### Training and evaluating the naive model
 With the model code complete, we can now turn to training and evaluating the model. In statistics and machine learning, you typically split the data into training and testing data. The training data is used to train your model (shocker) and the testing data is used to measure the model's accuracy. You do this to better estimate how the model will perform on data it hasn't seen before. This helps identify [model overfit](https://en.wikipedia.org/wiki/Overfitting) - where your model gets good at predicting your training data but adapts too much to spurious patterns in that data and then won't work well with new data. We'll use a 90-10 split of training-testing data (as we progress we'll break that 90 down even more for tuning model hyper-parameters). We'll also use a consistent seed (something used by random number generators to make random numbers) to ensure we can replicate results when running the code multiple times.
@@ -134,7 +134,7 @@ When we train and evaluate the naive MostFrequentClassClassifier on the model, w
 
 Notice that the model only predicted values of Bean as represented by numbers only being in Bean's column of the confusion matrix. This implies that Bean was the most common sender in our training dataset. Again, we can calculate the accuracy by summing along the diagonal and dividing by the total number gives us 3138/11218 or 27.97%.
 
-You can see the full code for [splitting the data](https://github.com/BrysonL/groupchat-classification/blob/7fe5a29755e9d2a749e38689cd37f4738e3873e0/data_load.py#L44C81-L44C81) and [evaluating the model](https://github.com/BrysonL/groupchat-classification/blob/main/test_models.py) on Github.
+You can see the full code for [splitting the data](https://github.com/BrysonL/groupchat-classification/blob/7fe5a29755e9d2a749e38689cd37f4738e3873e0/data_load.py#L44C81-L44C81) and [evaluating the model](https://github.com/BrysonL/groupchat-classification/blob/main/test_files/test_linear_model.py) on Github.
 
 ### Conclusion
 We now have extensible model and evaluator classes that we can build off of in future posts. The model base and classifier will be useful as we progress in order to build and compare models, respectively. We also used a naive most frequent classifier to establish a baseline of performance we can compare future models to. 
